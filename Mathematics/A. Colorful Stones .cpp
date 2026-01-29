@@ -10,7 +10,7 @@ int j = 0;
     for (int i = 0; i < t.size() ;  i++)
     {
     if(t[i] == s[j]){
-        cout << "nigga" << endl;
+    
     j++;
 }
     }
