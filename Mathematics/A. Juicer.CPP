@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 
-long long d,n=0,b,a,j=0;
+long long d,n=0,b,a,j=0,c=0;
 
 cin >> n >> b >> d;
 
@@ -14,22 +14,21 @@ for (long long i = 0; i < n; i++)
 {
     
 cin >> a;
-if (a < b)
+if (a > b)
 {
-    j += a;
+    continue;
 }
+
+j += a;
+
+if(j > d){
+    c++;
+    j = 0;
+
 }
-if(j == 0){
-    cout << 0;
-   
-}else if(j / d == 0)
-{
-cout << 1;
- 
-}else{
-    cout << j / d;
-  
+
 }
+cout << c;
 
     return 0;
 }
