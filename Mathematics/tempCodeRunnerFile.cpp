@@ -1,34 +1,21 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 #include <vector>
 using namespace std;
 
 int main() {
-char s ;
-long long t,stored,count=0,x=0,d=0;
+string s;
 
-cin >> t >> stored;
+cin >> s;
 
-while (t--)
-{
-cin >> s >> x;
-if(s == '+'){
-  
-    stored+=x;
-    
-}else if(s == '-'){
-    if (stored >= x){
-stored-=x;
-    }else{
-        count++;
-        continue;
+s.erase(remove(s.begin(), s.end(), '+'), s.end());
+ sort(s.begin(), s.end());
+ for(int i = 0; i < s.size(); i++) {
+        cout << s[i];
+        if(i != s.size() - 1) {  
+            cout << "+";
+        }
     }
-}
-}
-cout <<stored<<" "<< count;
-
-
-
-
     return 0;
 }
