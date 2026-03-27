@@ -4,20 +4,19 @@
 using namespace std;
 
 int main() {
-char s ;
-long long t,stored,count=0,x=0,d=0;
+string s ;
+int t,stored,count=0,x=0,d=0;
 
-cin >> t >> stored;
+cin >> t , stored;
 
 while (t--)
 {
 cin >> s >> x;
-if(s == '+'){
-  
+if(s == "+"){
+    cout << "here";
     stored+=x;
-    
-}else if(s == '-'){
-    if (stored >= x){
+}else{
+    if (stored > x){
 stored-=x;
     }else{
         count++;
@@ -25,7 +24,7 @@ stored-=x;
     }
 }
 }
-cout <<stored<<" "<< count;
+cout <<d<<" "<< count;
 
 
 

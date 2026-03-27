@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <cmath>
+#include <vector>
 using namespace std;
 int main() {
 long long a;
@@ -20,7 +20,8 @@ if(s.length() > 10){
     f+= s[0];
     f+= to_string(size);
     f+= s.back();
-    cout <<f ;
+    cout <<f <<endl;
+    
 }
 else{
     cout << s;

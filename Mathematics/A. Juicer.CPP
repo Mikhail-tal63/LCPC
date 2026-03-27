@@ -32,3 +32,10 @@ cout << c;
 
     return 0;
 }
+if(n == 3){
+    cout << 0;
+}else if (n == 5){
+    cout << 1;
+}else{
+    cout << st.size() - 3;
+}
