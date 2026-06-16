@@ -11,10 +11,14 @@ if(n < y){
 }
 
     for (int i = 1; i < n+1; i++) {
-       
-   if(n%i==0  && y%i==0){
-r=i;    
+       for (int j = 1; j < y+1; j++)
+       {
+           if( i%n==0 && i%y==0){
+r=j;    
    }
+       }
+       
+
   
 }
 

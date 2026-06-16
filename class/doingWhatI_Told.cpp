@@ -103,7 +103,7 @@ int main(){
     int choice;
     cout << "1- Tree Sort\n";
     cout << "2- Bubble Sort\n";
-    cout << "3- Shell Sort\n"; // ✅ ضفناها
+    cout << "3- Shell Sort\n"; 
     cout << "Choose: ";
     cin >> choice;
 
